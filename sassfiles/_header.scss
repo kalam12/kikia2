@@ -1,0 +1,248 @@
+#nav-bar{
+ position: sticky;
+ top: 0;
+ z-index: 10;
+ .navbar{
+ 	background-image: linear-gradient(to right, #a51d ,#5f1,#a3d40f);
+ 	padding: 11px !important;
+    opacity: 0.8;
+
+ 	.navbar-nav li{
+ 		padding: 0 10px;
+ 		a{
+          color: #fff!important;
+          font-weight: 700;
+          text-align: right;
+          float: right;
+ 		}
+ 	}
+ }
+ i.fa-bars{
+ 	color: #fff;
+ 	font-size: 30px !important;
+ }
+ .navbar-toggler{
+ 	outline: none !important;
+ }
+}
+#banner{
+background-image: linear-gradient(to right, #a517ba,#5f1782);
+color: #fff;
+padding-top: 5%;
+ h2.banner-tilts{
+ 	font-size: 40px;
+ 	text-transform: uppercase;
+ }	
+ a.play-btn{
+ 	padding: 12px;
+    color: #fff;
+    border: 1px solid #ddd;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 13px;
+    transition: .3s;
+    &:hover{
+     background: #3a1dabd6;
+     color:$color1;
+    }
+    i{
+    	padding-right: 8px;
+    }
+ }
+}
+#services{
+    padding: 80px 0;
+	background-image: linear-gradient(to right, #414141,#FF6A10);
+    @extend %service-titles;
+	 .service-img{
+	 	margin-bottom: 15px;
+	 	text-align: center;
+	 }
+	 .service-titles{
+        text-align: center;
+      h4{
+		 text-transform: uppercase;
+		 color: #fff;
+      }
+      p{
+      	color:$bg-white;
+      	margin-bottom: 35px;
+      }
+	 }
+	 .buy-now{
+          display: inline-block;
+          margin: 0 auto;
+          width: 100%;
+          text-align:center;
+          a{
+          font-size: 25px;
+          text-transform: uppercase;
+          padding: 12px 20px;
+          background: #6a6a;
+          color:#fff;
+          border:1px solid #A11a;
+          border-radius: 20px;
+          font-weight: 700;
+          text-decoration: none;
+ 	 	}
+      }
+	}
+#about-section{
+	  @extend %service-titles;
+	  background-image: linear-gradient(to right,#414141,#FF6A10,#6a6a,#6d6d);
+       padding: 50px 0;
+       .pa-about{
+        margin-bottom: 54px;
+        }
+	  .about-info{
+	  	color: #fff;
+	  	margin-bottom: 15px;
+	  	padding: 0 72px;
+	  	 h3{
+	  	 	margin-top: 8%;
+	  	 	font-weight: 600;
+	  	 	font-size: 40px;
+	  	 }
+	  }
+ ul{
+ 	margin:0;
+ 	padding: 0;
+ 	list-style: none;
+ 	li{
+ 		margin:10px 0;
+ 	}
+ }
+}
+
+#testimonail-section{
+	@extend %service-titles;
+	background-image: linear-gradient(to right,#414141,#FF6A10,#6a6a,#6d6d);
+	padding: 60px 0;
+	.testimonails{
+		border-left: 4px solid #7b1798;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		p{
+			margin-left: 5px;
+		}
+		img{
+         height: 50px;
+         width: 50px;
+         border-radius: 50%;
+         margin:0 10px; 
+		}
+		p.user-detalis{
+			
+			font-size: 14px;
+			padding-top: 10px;
+		}
+	}
+}
+#pricting-section{
+	@extend %service-titles;
+	background-image: linear-gradient(to right,#414141,#FF6A10,#6a6a,#6d6d);
+.price-info{
+	text-align: center;
+    background: #65c599ad;
+    .price-tilts {
+    background: #6a6a6a;
+    padding: 14px;
+    margin-bottom: 10px;
+    h3 {
+    text-transform: uppercase;
+    color: #fff;
+       }
+      }
+      .price-body {
+         ul {
+		    margin: 0;
+		    padding: 0;
+		    list-style: none;
+		     li {
+				    padding: 10px;
+				    text-transform: uppercase;
+				    color: #fff;
+				    border-bottom: 1px solid #666;
+				    line-height: 3;
+				    transition: .3s;
+				 &:hover{
+				 	background: #6a6a6a;
+				 	opacity: .7;
+				 	cursor:pointer;
+				 }
+				}
+		  }
+      }
+      .price {
+		    padding: 15px;
+		    background: #6a6a;
+		    h3 {
+			    color: #fff;
+			}
+		}
+
+	}
+}
+#call-to-action{
+	background-image: linear-gradient(to right,#414141,#FF6A10,#6a6a,#6d6d);
+	padding: 60px 0;
+	@extend %service-titles;
+    overflow: hidden;
+	.coll-active{
+
+		text-align: center;
+		transition: .4s;
+		cursor: pointer;
+		.call-icon{
+			padding: 30px 30px 10px;
+		a{
+			text-decoration: none;
+			    color: #333;
+			i{
+				margin:90px 0 20px;
+				font-weight: 100;
+				transition: .4s;
+				font-size: 42px; 
+			
+			}
+			h2{
+				transition: .3s;
+
+			}
+			p{
+			
+				transition: .3s;
+			}
+			
+		}
+		&:hover{
+          background: #eee;
+          
+		}
+
+		}
+
+	}
+}
+.counter-area{
+	@extend %p-t-b;
+	.text-center{
+		text-align: center;
+	}
+	.counter{
+         span{
+         	font-weight: 700;
+         }
+		.sprator{
+              	width: 62px;
+			    height: 2px;
+			    background: #fff;
+			    text-align: center;
+			    display: block;
+			    padding: 0 0;
+			    margin: 0 95px;
+			    margin-bottom: 6px;
+			    margin-top: 6px;
+		}
+	}
+}

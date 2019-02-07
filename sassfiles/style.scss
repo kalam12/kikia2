@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+$fonts-style :'Roboto', sans-serif;
+$bg-black: #000;
+$color1:#6ee80d;
+$bg:blue;
+$bg-white:white;
+$about-bg:#f8f9fa;
+
+%padding80{
+  padding: 80px 0;
+}
+%p-t-b{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+%service-titles{
+   
+     h2{
+          text-transform: uppercase;
+           color: #fff;
+           font-size: 40px;
+           font-weight: 700;
+           position: relative;
+           &:after{
+            position:absolute;
+            width: 200px;
+            height: 5px;
+            content: "";
+            left: 41%;
+            top: 49px;
+            background: #5de;
+          }
+           &:before{
+                position: absolute;
+        width: 100px;
+        height: 7px;
+        content: "";
+        left: 45%;
+        background: #c5d525;
+        bottom: -10px;
+        z-index: 1;
+        transform: translateY(-50%);
+      }
+      }
+   }
+
+@import "header";
+
+/*.box{
+	width:1200px;
+	margin:0 auto;
+	text-align:center;
+	
+}
+ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+
+	li{
+      display:inline-block;
+      position: relative;
+
+      a{
+        color:$bg-white;
+        display:block;
+        padding: 10px 15px;
+        background-color: $bg;
+        font-size: 30px;
+        text-transform: uppercase;
+        transition: .3s;
+        }
+        &:hover > a{
+        	background-color:$bg-black;
+      }
+      &:hover ul.submenu{
+       visibility: visible;
+       opacity: 1;
+       top: 100%;
+      }
+      &:hover .maga-menu{
+      visibility: visible;
+       opacity: 1;
+       top: 100%;
+      }
+    ul.submenu{
+		position: absolute;
+		width: 250px;
+		left: 0;
+		top: 130%;
+		opacity: 0;
+		visibility: hidden;
+		transition: .3s;
+
+		li{
+           display: block;
+		}
+		a{
+
+		}
+	}
+	.maga-menu{
+      width:750px;
+      position: absolute;
+      top: 130%;
+      left: 0;
+       transition: .3s;
+       opacity: 0;
+       visibility: hidden;
+       ul{
+       	margin: 0;
+       	padding: 0;
+       	width: 30.33%;
+       	float: left;
+       	transition: .3s;
+       }
+      li{
+       display: block;
+       a{
+       	padding: 10px 15px;
+       	text-transform:capitalize;
+       }
+      }
+	}
+
+	}
+}
+*/
